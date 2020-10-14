@@ -1,0 +1,73 @@
+body {
+    position: static;
+    background-color: #eee;
+}
+
+.container {
+    position: relative;
+    min-width: 320px;
+}
+
+.day {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0.5em;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 2em;
+    background-color: lightblue;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#overlay {
+    z-index: 10;
+    margin: auto;
+    font-size: 16px;
+    line-height: 2;
+    background-color: #eee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 4em 1.5em;
+}
+
+#overlay * {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#overlay-close {
+    position: absolute;
+    top: 10px;
+    right: 1em;
+    z-index: 10;
+    font-size: 25px;
+    border: 0;
+    text-align: center;
+    background-color: tomato;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none !important;
+}
+
+.center {
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+
+    #overlay {
+        padding: 4em 3em;
+    }
+
+}
